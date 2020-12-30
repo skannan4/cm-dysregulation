@@ -19,17 +19,21 @@ The following relevant files can be found on Github:
 
 - `bigref_figures.R`: A R file containing code necessary to reproduce all figures in the manuscript. Please note that this doesn't run independently of `bigref_code.R`; it was mostly designed just to isolate the plotting functions for figures into one clear place.
 
+-`bigref.py`: A python file containing code necessary to reproduce the RNA Velocity part of the workflow. All of the outputs of this section are also available in the Synapse folder for direct import into R.
+
 ### Dependencies
-Most of the libraries used in our codebase can be found from CRAN or Bioconductor. However, we additionally make use of the SingleCellNet package from the Cahan lab. Please see [their github](https://github.com/pcahan1/singleCellNet) for instructions on how to install SingleCellNet.
+Most of the libraries used in our codebase can be found from CRAN or Bioconductor. However, we additionally make use of the SingleCellNet package from the Cahan lab. Please see [their github](https://github.com/pcahan1/singleCellNet) for instructions on how to install SingleCellNet. Additionally, we make us of scvelo from the Theis lab. Please see [their github](https://github.com/theislab/scvelo) and [documentation](https://scvelo.readthedocs.io/) for more information on installing and running scvelo.
 
 ### How to replicate our workflow
 To replicate the workflow from the very top, please follow these steps:
 
-1. Download `bigref_code.R`, `bigref_figures.R`, and all of the files in the listed Synapse folder.
+1. Download `bigref_code.R`, `bigref_figures.R`, `bigref.py`, and all of the files in the listed Synapse folder.
 
 2. Modify the appropriate lines of both `bigref_code.R` and `bigref_figures.R`: `setwd("~/Documents/Research/BigRef/FinalWorkingFiles/")` to set the working directory to the same working directory you downloaded the Synapse files into it.
 
-3. Run code for any workflow section or figure of interest. The figures are broken into self-contained code-blocks; at the end of each code block, all temporary objects created for that figure are removed. Each code block should also have details on the figure itself that may be helpful.
+3. Similarly, modify the appropriate line of `bigref.py`: `os.chdir("/home/skannan4/Documents/Research/BigRef/FinalWorkingFiles/")` to set the appropriate working directory.
+
+4. Run code for any workflow section or figure of interest. The figures are broken into self-contained code-blocks; at the end of each code block, all temporary objects created for that figure are removed. Each code block should also have details on the figure itself that may be helpful.
 
 Alternatively, note that you can start by loading `data_workspace.RData` into R or an IDE of your choice. As mentioned above, this *should* contain most of the objects of interest for preliminary re-analysis, and can of course be supplemented simply by executing any desired sections in `bigref_code.R`.
 
