@@ -19,7 +19,7 @@ The following relevant files can be found on Github:
 
 - `bigref_figures.R`: A R file containing code necessary to reproduce all figures in the manuscript. Please note that this doesn't run independently of `bigref_code.R`; it was mostly designed just to isolate the plotting functions for figures into one clear place.
 
--`bigref.py`: A python file containing code necessary to reproduce the RNA Velocity part of the workflow. All of the outputs of this section are also available in the Synapse folder for direct import into R.
+- `bigref.py`: A python file containing code necessary to reproduce the RNA Velocity part of the workflow. All of the outputs of this section are also available in the Synapse folder for direct import into R.
 
 ### Dependencies
 Most of the libraries used in our codebase can be found from CRAN or Bioconductor. However, we additionally make use of the SingleCellNet package from the Cahan lab. Please see [their github](https://github.com/pcahan1/singleCellNet) for instructions on how to install SingleCellNet. Additionally, we make us of scvelo from the Theis lab. Please see [their github](https://github.com/theislab/scvelo) and [documentation](https://scvelo.readthedocs.io/) for more information on installing and running scvelo.
