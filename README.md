@@ -4,7 +4,7 @@
 We performed an scRNA-seq study to reconstruct the trajectories of cardiomyocyte (CM) maturation in both endogenous and pluripotent stem cell (PSC)-derived CMs. The goal was to develop a better understanding of the pathways underlying endogenous CM maturation, and investigate how these pathways are dysregulated during in vitro differentiation. Our results can be found in our preprint (add when ready). Here, we share all of the materials needed to reproduce our analysis.
 
 ### Data
-All of the relevant files to reproduce the analysis can be downloaded at our [Synapse](https://www.synapse.org/#!Synapse:syn21788425/files/). In particular, the following files may be of relevance:
+All of the relevant files to reproduce the analysis can be downloaded at our [Synapse](https://www.synapse.org/#!Synapse:syn23667436/files/). In particular, the following files may be of relevance:
 
 - `gene_mult.mtx`, `gene_mult.genes.txt`, `gene_mult.barcodes.txt`: These are the direct mapped outputs of kallisto|bustools, for those who want to start from the raw mapped counts and pursue their own pipelines. Please note, however, that because of some accidental errors in the sequencing preparation, some barcodes had unexpected collisions and therefore needed to be removed, which can be done by following our pipeline.
 
