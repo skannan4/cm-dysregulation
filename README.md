@@ -1,7 +1,7 @@
 # Trajectory reconstruction identifies dysregulation of perinatal maturation programs in pluripotent stem cell-derived cardiomyocytes
 
 ### Introduction
-We performed an scRNA-seq study to reconstruct the trajectories of cardiomyocyte (CM) maturation in both endogenous and pluripotent stem cell (PSC)-derived CMs. The goal was to develop a better understanding of the pathways underlying endogenous CM maturation, and investigate how these pathways are dysregulated during in vitro differentiation. Our results can be found in our preprint (add when ready). Here, we share all of the materials needed to reproduce our analysis.
+We performed an scRNA-seq study to reconstruct the trajectories of cardiomyocyte (CM) maturation in both endogenous and pluripotent stem cell (PSC)-derived CMs. The goal was to develop a better understanding of the pathways underlying endogenous CM maturation, and investigate how these pathways are dysregulated during in vitro differentiation. Our results can be found in our [preprint](https://www.biorxiv.org/content/10.1101/2021.01.31.428969v1). Here, we share all of the materials needed to reproduce our analysis.
 
 ### Data
 All of the relevant files to reproduce the analysis can be downloaded at our [Synapse](https://www.synapse.org/#!Synapse:syn23667436/files/). In particular, the following files may be of relevance:
